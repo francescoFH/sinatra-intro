@@ -1,3 +1,3 @@
 # sinatra-intro
 
-Intro to the web using ##Sinatra##.
+Intro to the web using #Sinatra#.
