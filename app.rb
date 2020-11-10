@@ -14,5 +14,9 @@ get '/myname' do
 end
 
 get '/cat' do
-  erb(:index)
+  @name = ["Ciccio", "Fran", "Bond, James Bond"].sample
+  erb :index
 end
+
+
+# shotgun app.rb -p 4567
