@@ -13,8 +13,14 @@ get '/myname' do
   "My name is Bond, James Bond!"
 end
 
-get '/cat' do
+get '/random-cat' do
   @name = ["Ciccio", "Fran", "Bond, James Bond"].sample
+  erb :index
+end
+
+get '/named-cat' do
+  p params
+  @name = params[:name]
   erb :index
 end
 
